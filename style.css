@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "My font name"; 
+    src: url(VeniceClassic.ttf) format("truetype");
+}
+
+body{
+    margin: 5px;
+    background-image: url(/images/bkgtile.gif);
+    font-family: "My font name", sans-serif;
+    text-align: center;
+    color: #b2c0c0;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: aquamarine; 
+}
+
+#header {
+    width: 100%;
+    background-color: #2d6679;
+    height: 150px;
+    background-image: url(/images/background1.jpg);
+    background-size: 100%;
+    border: 2px dashed #ffaa3f;
+}
+#movingline {
+    font-size: 19px;
+}
+
+#navbar {
+    height: 40px;
+    background-color: #034647;
+    width: 100%;
+    border: 2px dashed #ffaa3f;
+}
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+#navbar li {
+    padding-top: 10px;
+}
+
+#navbar li a {
+    color: #b2c0c0;
+    font-weight: 800;
+    text-decoration: none;
+}
+#navbar li a:hover {
+    color: #ffaa3f;
+    text-decoration: underline;
+}
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: #034647;
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    height: 600px;
+    overflow: auto;
+    border: 2px dashed #ffaa3f;
+}
+
+main {
+    background-color: #034647;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    height: 600px;
+    overflow: auto;
+    border: 2px dashed #ffaa3f;
+}
+
+#leftside{
+    order:1;
+}
+#rightside{
+    order:3;
+    position: relative;
+}
+
+#border1 {
+    position:absolute;
+    bottom: -130px;
+    left: 300px;
+    height: 200px;
+    width: auto;
+}
+#pluto {
+    position:absolute;
+    top: 190px;
+    right: 290px;
+    height: 50px;
+    width: auto;
+}
+#skelet {
+    position:absolute;
+    bottom: -195px;
+    right: 700px;
+    height: 50px;
+    width: auto;
+}
+
+
+footer {
+    background-color: #034647;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    padding: 0em 0 5em 0;
+    text-align: center;
+    border: 2px dashed #ffaa3f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
